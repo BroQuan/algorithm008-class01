@@ -9,11 +9,11 @@
 输出：4
 ```
 ### 思路
-二分查找
-&emsp;&emsp;分三种情况：
-&emsp;&emsp;1. nums[left] < nums[mid] 且 nums[mid] > nums[r]，说明 left 与 right 范围内数据无序，且拐点在 mid 右部，故 left = mid + 1；  
-&emsp;&emsp;2. nums[left] > nums[mid] 且 nums[mid] < nums[r],说明 left 与 right 范围内数据无序，且拐点在 mid 左部，故 right = mid - 1；  
-&emsp;&emsp;2. nums[left] < nums[mid] 且 nums[mid] < nums[r],说明 left 与 right 范围内数据有序，直接返回left下标即可。
+二分查找  
+&emsp;&emsp;分三种情况：  
+&emsp;&emsp;1. nums[left] < nums[mid] 且 nums[mid] > nums[r]，说明 left 与 right 范围内数据无序，且拐点在 mid 右部，故 left = mid + 1；    
+&emsp;&emsp;2. nums[left] > nums[mid] 且 nums[mid] < nums[r],说明 left 与 right 范围内数据无序，且拐点在 mid 左部，故 right = mid - 1；    
+&emsp;&emsp;2. nums[left] < nums[mid] 且 nums[mid] < nums[r],说明 left 与 right 范围内数据有序，直接返回left下标即可。  
 
 
 
